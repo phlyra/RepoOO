@@ -1,0 +1,7 @@
+F:\IESB\01-2021 Orientação Objeto\RepoOO\Laboratorios\Laboratorio_01\Laboratorio_01\bin\Debug\Laboratorio_01.exe.config
+F:\IESB\01-2021 Orientação Objeto\RepoOO\Laboratorios\Laboratorio_01\Laboratorio_01\bin\Debug\Laboratorio_01.exe
+F:\IESB\01-2021 Orientação Objeto\RepoOO\Laboratorios\Laboratorio_01\Laboratorio_01\bin\Debug\Laboratorio_01.pdb
+F:\IESB\01-2021 Orientação Objeto\RepoOO\Laboratorios\Laboratorio_01\Laboratorio_01\obj\Debug\Laboratorio_01.csprojAssemblyReference.cache
+F:\IESB\01-2021 Orientação Objeto\RepoOO\Laboratorios\Laboratorio_01\Laboratorio_01\obj\Debug\Laboratorio_01.csproj.CoreCompileInputs.cache
+F:\IESB\01-2021 Orientação Objeto\RepoOO\Laboratorios\Laboratorio_01\Laboratorio_01\obj\Debug\Laboratorio_01.exe
+F:\IESB\01-2021 Orientação Objeto\RepoOO\Laboratorios\Laboratorio_01\Laboratorio_01\obj\Debug\Laboratorio_01.pdb
