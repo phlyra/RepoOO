@@ -11,7 +11,7 @@ namespace Laboratorio_02
         float tarifaSaque = 0.37f / 100;
         float tarifaTransferencia = 0.10f / 100;
         float valorDepositado;
-        float valorSaque;
+        int valorSaque;
         float valorTransferencia;
 
         public ContaCorrente(string nomeCorrentista, int numeroIdentificacao, float saldoAtual) : base(nomeCorrentista, numeroIdentificacao, saldoAtual)
@@ -33,12 +33,13 @@ namespace Laboratorio_02
             return SaldoAtual;
         }
 
-        public float SacarDinheiro(float valor)
+        public int SacarDinheiro(int valor)
         {
             valorSaque = valor;
             Console.WriteLine($" {NomeCorrentista}  está tentando sacar R$ {valorSaque} de R$ {SaldoAtual} diponiveis na conta" +
                 $" com uma tarifa de R$ {valorSaque * tarifaSaque}\n");
-            if (SaldoAtual >= 0 && (valorSaque <= SaldoAtual * (1 + tarifaSaque)))
+
+            if (SaldoAtual > 0 && (valorSaque < SaldoAtual) && (SaldoAtual - valorSaque >= valorSaque * tarifaSaque ))
             {
 
                 SaldoAtual = SaldoAtual - valorSaque - (valorSaque * tarifaSaque);
@@ -58,7 +59,8 @@ namespace Laboratorio_02
             valorTransferencia = valor;
             Console.WriteLine($" {NomeCorrentista}  está tentando transferir R$ {valorTransferencia} de R$ {SaldoAtual} diponiveis na conta, para {nomeAlvoTransferencia}." +
                 $" Essa operação tem uma tarifa de R$ {valorTransferencia * tarifaTransferencia}\n");
-            if (SaldoAtual >= 0 && (valorTransferencia <= SaldoAtual * (1 + tarifaTransferencia)))
+
+            if (SaldoAtual > 0 && (valorTransferencia < SaldoAtual) && (SaldoAtual - valorTransferencia >= valorTransferencia * tarifaTransferencia))
             {
 
                 SaldoAtual = SaldoAtual - valorTransferencia - (valorTransferencia * tarifaTransferencia);

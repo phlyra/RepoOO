@@ -10,6 +10,17 @@ namespace Laboratorio_02
     {
         static void Main(string[] args)
         {
+            ContaCorrente cliente0 = new ContaCorrente("Teste", 147855, 0);
+            cliente0.DepositarDinheiro(500);
+            cliente0.SacarDinheiro(500);
+            cliente0.VerificarSaldo();
+            Console.ReadLine();
+            cliente0.TransferirDinheiro(300, "Bob Nelson");
+            cliente0.SacarDinheiro(100);
+            cliente0.VerificarSaldo();
+            Console.ReadLine();
+
+
             ContaCorrente cliente1 = new ContaCorrente("Bob Nelson", 123456, 0);
             cliente1.DepositarDinheiro(5000);
             Console.ReadLine();

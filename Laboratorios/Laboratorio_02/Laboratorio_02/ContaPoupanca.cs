@@ -37,7 +37,8 @@ namespace Laboratorio_02
             valorSaque = valor;
             Console.WriteLine($" {NomeCorrentista}  está tentando sacar R$ {valorSaque} de R$ {SaldoAtual} diponiveis na conta" +
                 $" com uma tarifa de R$ {valorSaque * tarifaSaque}\n");
-            if (SaldoAtual >= 0 && (valorSaque <= SaldoAtual * (1 + tarifaSaque)))
+
+            if (SaldoAtual > 0 && (valorSaque < SaldoAtual) && (SaldoAtual - valorSaque >= valorSaque * tarifaSaque))
             {
 
                 SaldoAtual = SaldoAtual - valorSaque - (valorSaque * tarifaSaque);
@@ -57,7 +58,8 @@ namespace Laboratorio_02
             valorTransferencia = valor;
             Console.WriteLine($" {NomeCorrentista}  está tentando transferir R$ {valorTransferencia} de R$ {SaldoAtual} diponiveis na conta, para {nomeAlvoTransferencia}." +
                 $" Essa operação tem uma tarifa de R$ {valorTransferencia * tarifaTransferencia}\n");
-            if (SaldoAtual >= 0 && (valorTransferencia <= SaldoAtual * (1 + tarifaTransferencia)))
+
+            if (SaldoAtual > 0 && (valorTransferencia < SaldoAtual) && (SaldoAtual - valorTransferencia >= valorTransferencia * tarifaTransferencia))
             {
 
                 SaldoAtual = SaldoAtual - valorTransferencia - (valorTransferencia * tarifaTransferencia);
