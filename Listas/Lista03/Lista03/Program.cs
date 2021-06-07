@@ -51,7 +51,9 @@ namespace Lista03
             # region Resolucao 03
             string expressaoCerta = "1+ (5 +3 - (8-5)*4 - ((3+7)*(3-1)))";
 
-            Console.WriteLine($"Certa: {ChecarParentesesExpressao(expressaoCerta)}");
+            Console.WriteLine($" A disposição dos parenteses na expressão {expressaoCerta} está correto? " +
+                $"True para correta e False para incorreta \n{ChecarParentesesExpressao(expressaoCerta)}");
+            Console.ReadLine();
             #endregion
         }
 
